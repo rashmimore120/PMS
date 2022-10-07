@@ -1,0 +1,46 @@
+{% extends 'adminhome.html' %}
+
+{% block main %}
+<center>
+<h2>View & Manage Users Details</h2>
+
+<table cellspacing="5">
+<tr>
+<th>RegID</th>
+<th>Name</th>    
+<th>Username</th>
+<th>Address</th>
+<th>Mobile</th>
+<th>City</th>
+<th>Gender</th>
+<th>Info</th>
+<th>Status</th>
+<th>Action</th>
+</tr>    
+<tr><td colspan="10"><hr></td></tr>
+{% for row in userDetails %}
+<tr>
+<td>{{row.regid}}</td>
+<td>{{row.name}}</td>    
+<td>{{row.username}}</td>
+<td>{{row.address}}</td>
+<td>{{row.mobile}}</td>
+<td>{{row.city}}</td>
+<td>{{row.gender}}</td>
+<td>{{row.info}}</td>
+<td>
+{% if row.status %}
+    <a style="color:orangered;" href="/myadmin/manageuserstatus/?regid={{row.regid}}&s=block">Block User</a>            
+{% else %}
+    <a style="color:green" href="/myadmin/manageuserstatus/?regid={{row.regid}}&s=verify" >Verify User</a>
+{% endif %}    
+</td>
+<td><a style="color:red;" href="/myadmin/manageuserstatus/?regid={{row.regid}}&s=delete" >Delete User</a></td>
+</tr>
+<tr><td colspan="10"><hr></td></tr>
+{% endfor %}
+
+</table>
+
+</center>>
+{% endblock  %}

@@ -1,0 +1,34 @@
+{% extends 'master_template.html' %}
+
+{% block content %}
+
+<style>
+#category_main
+{
+    height:auto;
+    width:600px;
+}    
+.category_part
+{
+    height:200px;
+    width:200px;
+    float:left;
+}
+</style>
+
+<h2>Project Categories : </h2>
+<div id="category_main" >
+    {% for row in clist %}
+    <a href="/viewsubcat/?cnm={{row.catnm}}">
+    <div class="category_part" >
+        <center>
+        <img src="{{media_url}}{{row.caticonnm}}" height="150" width="150"/>
+        <br><br>
+        <b>{{row.catnm}}</b>
+        </center>    
+    </div>
+    </a>
+    {% endfor %}
+</div>
+
+{% endblock %}

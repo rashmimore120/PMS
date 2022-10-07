@@ -1,0 +1,28 @@
+{% extends 'master_template.html' %}
+
+{% block content %}
+
+<script>
+
+var xhttp = new XMLHttpRequest();
+xhttp.open("GET","https://jsonplaceholder.typicode.com/posts",true)
+xhttp.send()
+
+xhttp.onreadystatechange=function(){
+	if(xhttp.status==200 && xhttp.readyState==4)
+	{
+		document.getElementById('response').innerHTML=xhttp.responseText	
+	}	
+}
+
+</script>
+
+
+
+<h2>Welcome to Project Management System</h2>
+<h1>About page</h1>
+
+<div id="response"></div>
+
+
+{% endblock %}

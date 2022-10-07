@@ -1,0 +1,50 @@
+{% extends 'master_template.html' %}
+
+{% block header %}    
+<div id="tooplate_header">
+
+    <div id="site_title">
+    
+        <h1><a style="font-size:30px;" href="#">Project Management System<span>Manage Project Online...</span></a></h1>
+    
+    </div> <!-- end of site_title -->
+    
+    <div id="header_phone_no">
+	
+	 Welcome Admin : {{sunm}}	
+    
+    </div>
+    
+    <div class="cleaner_h10"></div>
+    
+    <div id="tooplate_menu">
+        
+        <div id="home_menu"><a href="#"></a></div>
+            
+        <ul>
+            <li><a href="/myadmin/" class="current">Admin Home</a></li>
+            <li><a href="/myadmin/manageusers/" >Manage Users</a></li>
+            <li><a href="/myadmin/addcategory/" >Add Category</a></li>
+            <li><a href="/myadmin/addsubcategory/" >Add Sub Category</a></li>
+            <li><a href="/myadmin/cpadmin/">Change password</a></li>
+            <li><a href="/myadmin/epadmin/">Edit profile</a></li>
+            <li><a href="/login/">Logout</a></li>
+        </ul>    	
+    
+    </div> <!-- end of tooplate_menu -->
+    
+</div>	  
+{% endblock  %}
+
+
+
+{% block banner %}
+{% endblock  %}
+
+
+{% block main %}
+<center>
+<h1>Welcome to Admin Panel</h1>
+<h2>Admin Home</h2
+</center>
+{% endblock  %}

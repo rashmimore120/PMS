@@ -1,0 +1,47 @@
+{% extends 'master_template.html' %}
+
+{% block header %}    
+<div id="tooplate_header">
+
+    <div id="site_title">
+    
+        <h1><a style="font-size:30px;" href="#">Project Management System<span>Manage Project Online...</span></a></h1>
+    
+    </div> <!-- end of site_title -->
+    
+    <div id="header_phone_no">
+
+	Welcome User : {{sunm}}	
+    
+    </div>
+    
+    <div class="cleaner_h10"></div>
+    
+    <div id="tooplate_menu">
+        
+        <div id="home_menu"><a href="#"></a></div>
+            
+        <ul>
+            <li>
+<a href="/user/" class="current">User Home</a></li>
+<li><a href="/user/funds">Fund raising</a></li>
+<li><a href="/login/">Logout</a></li>
+        </ul>    	
+    
+    </div> <!-- end of tooplate_menu -->
+    
+</div>	  
+{% endblock  %}
+
+
+
+{% block banner %}
+{% endblock  %}
+
+
+{% block main %}
+<center>
+<h1>Welcome to User Panel</h1>
+<h2>User Home</h2
+</center>>
+{% endblock  %}

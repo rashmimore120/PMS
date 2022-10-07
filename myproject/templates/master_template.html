@@ -1,0 +1,131 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>PMS</title> 
+<link href="{% static 'images/logo.jpg' %}" rel="icon" />
+
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<!--
+Template 2033 Business
+http://www.tooplate.com/view/2033-business
+-->
+<link href="{% static 'tooplate_style.css' %}" rel="stylesheet" type="text/css" />
+
+</head>
+<body> 
+
+<!-- start of header_wrapper -->
+<div id="tooplate_header_wrapper">
+    {% block header %}    
+    <div id="tooplate_header">
+    
+        <div id="site_title">
+        
+        	<h1><a style="font-size:30px;" href="#">Project Management System<span>Manage Project Online...</span></a></h1>
+        
+        </div> <!-- end of site_title -->
+        
+        <div id="header_phone_no">
+
+			Toll Free: <span>XX XXX XXX XXX</span>
+        
+        </div>
+        
+        <div class="cleaner_h10"></div>
+        
+        <div id="tooplate_menu">
+        	
+            <div id="home_menu"><a href="#"></a></div>
+                
+            <ul>
+                <li><a href="/" class="current">Home</a></li>
+                <li><a href="/about/">About Us</a></li>
+                <li><a href="/contact/">Contact</a></li>
+                <li><a href="/service/">Service</a></li>
+                <li><a href="/register/">Register</a></li>
+                <li><a href="/login/">Login</a></li>
+            </ul>    	
+        
+        </div> <!-- end of tooplate_menu -->
+        
+    </div>	  
+    {% endblock  %}
+</div> 
+<!-- end of header_wrapper -->
+
+
+
+<!-- start of middle_wrapper -->
+{% block banner %}
+<div id="tooplate_middle_wrapper1">
+	<div id="tooplate_middle_wrapper2">
+		<div id="tooplate_middle">
+
+			<h1>BE ACTIVE<span>with latest updates....</span></h1>
+			
+			<p>This is online portal to manage project resources at company level , colleges etc</p>
+			
+			<a href="#"><span>+</span> More</a>
+			
+		</div>
+	</div>
+</div>
+{% endblock %}
+<!-- end of middle_wrapper -->
+
+
+
+<!-- start of tooplate_main -->
+<div id="tooplate_main">
+{% block main %}        
+
+    <!-- start of tooplate_content -->
+    <div id="tooplate_content">
+        {% block content %}
+
+        {% endblock %}           
+    </div>
+    <!-- end of tooplate_content -->
+
+    
+    <!-- start of tooplate_sidebar -->
+        <div id="tooplate_sidebar">
+            {% block sidebar %}
+            <h2>Social Links</h2>
+            
+            <ul class="tooplate_list">
+            <li><a href="#">@Twitter</a></li>
+            <li><a href="#">@Facebook</a></li>
+            <li><a href="#">@Gmail</a></li>
+            <li><a href="#">@LinkedIn</a></li>
+            </ul>
+            {% endblock %}
+        </div>
+        <div class="cleaner"></div>
+        <!-- end of tooplate_sidebar -->
+{% endblock %}
+</div>
+<div class="cleaner"></div>  
+<!-- end of tooplate_main -->
+
+
+
+<!-- start of tooplate_footer -->
+<div id="tooplate_footer_wrapper">
+
+     <div id="tooplate_footer">
+    
+        <h2>Copyright © 2021 <a href="#">PMS</a> - Design: <a href="">DjangoBatch34</a></h2>
+    
+    </div> <!-- end of tooplate_footer -->
+
+</div> 
+<!-- end of tooplate_footer -->
+
+    
+</body>
+</html>
